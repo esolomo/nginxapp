@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="Building go code"  >
+<target name="Building go code">
+  <echo></echo>
+  <exec failonerror="false" dir="/Users/solomo/Documents/App/baseapp" executable="bash" osfamily="unix">
+    <arg line="-c &apos;export GOPATH=/Users/solomo/Documents/App/baseapp ; GOOS=linux GOARCH=amd64 go install main/app&apos;"/>
+  </exec>
+  <echo></echo>
+</target>
+</project>

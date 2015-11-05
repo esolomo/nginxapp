@@ -1,0 +1,24 @@
+<assembly>
+  <id>go</id>
+  <formats>
+    <format>tar.gz</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>${app.dir}</directory>
+      <outputDirectory>${target.dir}</outputDirectory>
+      <fileMode>0777</fileMode>
+    </fileSet>
+    <fileSet>
+      <directory>${project.basedir}/src/main/app/confd</directory>
+      <outputDirectory>${target.dir}</outputDirectory>
+      <fileMode>0777</fileMode>
+    </fileSet>
+    <fileSet>
+      <directory>${project.basedir}/src/main/app/bin</directory>
+      <outputDirectory>${target.dir}</outputDirectory>
+      <fileMode>0777</fileMode>
+    </fileSet>
+  </fileSets>
+</assembly>
