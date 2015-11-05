@@ -1,5 +1,10 @@
 #!/bin/bash
 
-CURRENT=`pwd`
+echo "Stopping Base Nginx application"
 
-$CURRENT/baseapp disown
+BASEDIR=$(dirname $0)
+
+echo "Nginx should never be stopped"
+
+
+

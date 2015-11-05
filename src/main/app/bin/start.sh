@@ -1,7 +1,8 @@
 #!/bin/bash                                                                                                                                                                          
-echo "Starting Base screening application"
+
+echo "Starting Base Nginx application"
 
 BASEDIR=$(dirname $0)
 
-$BASEDIR/linux_amd64/app & disown
+service nginx start
 
